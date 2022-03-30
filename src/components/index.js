@@ -22,6 +22,7 @@ export default function CampoInteiro({ value, action, styles }) {
             selectTextOnFocus
             onChangeText={(newValue) => { atualiza(newValue, action) }}
             value={numeroString}
+            removeClippedSubviews
         />
     )
 }

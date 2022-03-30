@@ -33,10 +33,9 @@ export default function Routes() {
                     backgroundColor: colors.laranja
                 },
                 tabBarHideOnKeyboard: true,
-                headerShown: false,
             }}>
-            <Tab.Screen name="Serviços" component={Services} />
-            <Tab.Screen name="Carrinho" component={Carrinho} />
+            <Tab.Screen name="Serviços" component={Services} options={{ headerShown: false }} />
+            <Tab.Screen name="Carrinho" component={Carrinho} options={{ headerShown: false }} />
         </Tab.Navigator>
     </NavigationContainer>
 }
